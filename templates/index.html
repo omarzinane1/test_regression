@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des Clients</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Liste des Clients</h1>
+  <a href="{{ url_for('add_client') }}">➕ Ajouter un client</a>
+  <table>
+    <tr><th>Nom</th><th>Âge</th><th>Niveau</th></tr>
+    {% for c in clients %}
+      <tr>
+        <td>{{ c.nom }}</td>
+        <td>{{ c.age }}</td>
+        <td>{{ c.niveau }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
