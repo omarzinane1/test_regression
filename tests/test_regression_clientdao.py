@@ -10,7 +10,6 @@ class TestRegressionClientDAO(unittest.TestCase):
         cls.dao = ClientDAO(db_name="test_db_regression")
         cls.dao.collection.delete_many({})  # Nettoyer avant les tests
 
-        # --- Données de référence dans MongoDB ---
         cls.reference_data = [
             {"nom": "Omar", "age": 25, "niveau": "Débutant"},
             {"nom": "Amina", "age": 30, "niveau": "Avancé"},
