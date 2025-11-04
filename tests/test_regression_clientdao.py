@@ -15,7 +15,8 @@ class TestRegressionClientDAO(unittest.TestCase):
             {"nom": "Omar", "age": 25, "niveau": "Débutant"},
             {"nom": "Amina", "age": 30, "niveau": "Avancé"},
             {"nom": "Ali", "age": 28, "niveau": "Moyen"},
-            {"nom": "test", "age": 28, "niveau": "test"},
+            {"nom": "Test2", "age": 28, "niveau": "Test2"},
+            {"nom": "Test2", "age": 28, "niveau": "Test2"},
         ]
 
         cls.dao.collection.insert_many(cls.reference_data)
